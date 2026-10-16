@@ -1,0 +1,128 @@
+{
+  "inicio": {
+    "texto": "¡Hola! Soy Turbo ⚡, tu bot futbolero. Antes de empezar, ¿cómo te llamás?",
+    "requiereInput": true,
+    "tipoInput": "nombre",
+    "placeholder": "Tu nombre aquí...",
+    "siguiente": "menu_principal"
+  },
+  "menu_principal": {
+    "texto": "¡Qué hacés, {{nombre}}! ⚽ ¿De qué equipo sos o sobre cuál querés información?",
+    "opciones": [
+      {
+        "texto": "💙 Boca Juniors",
+        "siguiente": "info_boca",
+        "guardarEquipo": "Boca Juniors"
+      },
+      {
+        "texto": "❤️ River Plate",
+        "siguiente": "info_river",
+        "guardarEquipo": "River Plate"
+      },
+      {
+        "texto": "🏆 Real Madrid",
+        "siguiente": "info_real_madrid",
+        "guardarEquipo": "Real Madrid"
+      },
+      {
+        "texto": "🔴 Barcelona",
+        "siguiente": "info_barcelona",
+        "guardarEquipo": "Barcelona"
+      },
+      {
+        "texto": "❌ Terminar conversación",
+        "siguiente": "fin"
+      }
+    ]
+  },
+  "info_boca": {
+    "texto": "¡El Xeneize! 💙💛 Boca Juniors es uno de los clubes más grandes de América. Posee 6 Copas Libertadores y 3 Copas Intercontinentales. Su templo es La Bombonera.",
+    "opciones": [
+      {
+        "texto": "📜 Ver más detalles de {{equipo}}",
+        "siguiente": "detalle_equipo"
+      },
+      {
+        "texto": "↩️ Volver al menú principal",
+        "siguiente": "menu_principal"
+      },
+      {
+        "texto": "❌ Terminar conversación",
+        "siguiente": "fin"
+      }
+    ]
+  },
+  "info_river": {
+    "texto": "¡El Millonario! ⚪🔴⚪ River Plate es reconocido mundialmente por su paladar negro y sus 4 Copas Libertadores, incluyendo la histórica final de Madrid en 2018.",
+    "opciones": [
+      {
+        "texto": "📜 Ver más detalles de {{equipo}}",
+        "siguiente": "detalle_equipo"
+      },
+      {
+        "texto": "↩️ Volver al menú principal",
+        "siguiente": "menu_principal"
+      },
+      {
+        "texto": "❌ Terminar conversación",
+        "siguiente": "fin"
+      }
+    ]
+  },
+  "info_real_madrid": {
+    "texto": "¡El Rey de Europa! 👑 El Real Madrid es el club con más Champions League en la historia (15 títulos) y fue elegido el Club del Siglo XX por la FIFA.",
+    "opciones": [
+      {
+        "texto": "📜 Ver más detalles de {{equipo}}",
+        "siguiente": "detalle_equipo"
+      },
+      {
+        "texto": "↩️ Volver al menú principal",
+        "siguiente": "menu_principal"
+      },
+      {
+        "texto": "❌ Terminar conversación",
+        "siguiente": "fin"
+      }
+    ]
+  },
+  "info_barcelona": {
+    "texto": "¡El Barça! 🔵🔴 Famoso por su estilo de juego 'Tiki-Taka', sus 5 UEFA Champions League y por haber tenido en sus filas al legendario Lionel Messi.",
+    "opciones": [
+      {
+        "texto": "📜 Ver más detalles de {{equipo}}",
+        "siguiente": "detalle_equipo"
+      },
+      {
+        "texto": "↩️ Volver al menú principal",
+        "siguiente": "menu_principal"
+      },
+      {
+        "texto": "❌ Terminar conversación",
+        "siguiente": "fin"
+      }
+    ]
+  },
+  "detalle_equipo": {
+    "texto": "¡Excelente elección, {{nombre}}! Me acordaré de que te gusta {{equipo}}. ¿Querés consultar sobre otro equipo o preferís volver al menú?",
+    "opciones": [
+      {
+        "texto": "⚽ Elegir otro equipo",
+        "siguiente": "menu_principal"
+      },
+      {
+        "texto": "❌ Terminar conversación",
+        "siguiente": "fin"
+      }
+    ]
+  },
+  "fin": {
+    "texto": "¡Un gusto charlar de fútbol con vos, {{nombre}}! ⚽⚡ Si querés volver a chatear, tocá el botón de abajo.",
+    "opciones": [
+      {
+        "texto": "🔄 Volver a empezar",
+        "siguiente": "inicio"
+      }
+    ]
+  }
+}
